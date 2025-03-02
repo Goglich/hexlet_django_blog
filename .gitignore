@@ -1,4 +1,5 @@
 __pycache__/
+__pycache__
 *.py[cod]
 build/
 develop-eggs/
@@ -20,3 +21,4 @@ coverage.xml
 .venv
 env/
 venv/
+*.pyc
