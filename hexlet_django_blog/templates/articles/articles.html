@@ -5,5 +5,9 @@
 {% block content %}
     <h1>Статьи</h1>
     <p>Эксперименты с Django на Хекслете</p>
-    <p>{{ tags|join:', ' }}</p>
+    <br>
+    {% for article in articles %}
+    <h3>{{ article.name }}</h3>
+    <p>{{ article.body }}</p>
+    {% endfor %}
 {% endblock %}
