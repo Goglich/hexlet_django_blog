@@ -7,7 +7,7 @@
     <p>Эксперименты с Django на Хекслете</p>
     <br>
     {% for article in articles %}
-    <h3>{{ article.name }}</h3>
+    <h3><a href="{% url 'article' article.id %}">{{ article.name }}</a></h3>
     <p>{{ article.body }}</p>
     {% endfor %}
 {% endblock %}

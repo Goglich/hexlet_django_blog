@@ -3,5 +3,6 @@
 {% block title %}Эксперименты с Django на Хекслете{% endblock %}
 
 {% block content %}
-Статья номер {{ article_id }}. Тег {{ tags }}
+<h1>{{ article.name }}</h1>
+<div>{{ article.body }}</div>
 {% endblock %}
